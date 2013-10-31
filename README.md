@@ -4,7 +4,7 @@ CrowdflowerJS is a library for the crowdflower API wrapped up in javascript. The
 
 This project is part of Web Information Systems group.
 
-### Credits to
+### Contributors
 
 - Alessandro Bozzon (project conceptualization)
 - Jasper Oosterman (main developer)

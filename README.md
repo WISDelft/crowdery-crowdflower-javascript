@@ -6,8 +6,8 @@ This project is part of Web Information Systems group.
 
 ### Contributors
 
-- Alessandro Bozzon (project conceptualization)
 - Jasper Oosterman (main developer)
+- Alessandro Bozzon (project conceptualization)
 
 ### TODO
 - Adding and specifying gold data is not yet implemented.
@@ -110,7 +110,8 @@ For known errors see [jCrowdFlower](https://github.com/WISDelft/crowdery-crowdfl
 ## Organization
 **Delft University of Technology** <br />
 [Faculty] Electrical Engineering, Computer Science and Mathematics<br />
-[Department] Web Information Systems<br />
-[Contact] jasper.oosterman@gmail.com <br />
+[Department] Software and Computing Technology
+[Group] Web Information Systems<br />
+[Contact] j.e.g.oosterman@tudelft.nl <br />
 
 ![tudelft](http://www.se.ewi.tudelft.nl/dmcd2011/images/TU-Delft_logo.gif)

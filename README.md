@@ -24,9 +24,10 @@ All API requests are asynchronous meaning that results (or errors) should be han
 
 (1) Load the crowdflower.jquery.js library
 
-		<script type="text/javascript" src="../jquery.min.js"></script>
-		<script type="text/javascript" src="../crowdflower.jquery.js"></script>
-
+```javascript
+<script type="text/javascript" src="../jquery.min.js"></script>
+<script type="text/javascript" src="../crowdflower.jquery.js"></script>
+```
 
 (2) Setup the credentials and proxy
 	

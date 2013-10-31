@@ -2,19 +2,17 @@ crowdflower.jquery.js
 =======
 CrowdflowerJS is a library for the crowdflower API wrapped up in javascript. The official Crowdflower API description can be found [here](http://crowdflower.com/docs-api). jQuery is required for this library to work. After the library is loaded the API is accessible via $.crowdflower.
 
-This project is part of Web information Systems groups.
+This project is part of Web Information Systems group.
 
 Credits to
 
 - Alessandro Bozzon (project conceptualization)
 - Jasper Oosterman (main developer)
 
-![tudelft](http://home.tudelft.nl/fileadmin/Default/Templates/images/logo.gif)
-
 ### TODO
 - Adding and specifying gold data is not yet implemented.
-- Ordering of jobs is not tested yet.
-- Adding data from file types other than .csv is not yet implemented.
+- Ordering/paying of jobs is not tested yet.
+- Uploading data is not yet supported from all accepted types
 
 ### CrowdflowerJS
 
@@ -60,40 +58,43 @@ The following table lists the namespace where functions can be found. CRUD opera
 
 <table border="1">
 	<tr>
+		<th>Namespace</th>
+		<th>Comments</th>			
+	<tr>
 		<td>$.crowdflower</td>
 		<td>Global functions for managing default handlers, credentials, and proxy.</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.jobs</td>
-		<td></td>
+		<td>List and create jobs</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.job</td>
-		<td> </td>
+		<td>Read, update, delete a job. Delete method is named remove.</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.job.units</td>
-		<td></td>
+		<td>List and create units</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.job.unit</td>
-		<td></td>
+		<td>Read, update, delete a unit. Delete method is named destroy</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.job.judgments</td>
-		<td></td>
+		<td>Create judgment.</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.job.judgment</td>
-		<td></td>
+		<td>Read, update, delete a judgment. Delete method is named remove</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.job.orders</td>
-		<td></td>
+		<td>Create orders</td>
 	</tr>
 	<tr>
 		<td>$.crowdflower.job.order</td>
-		<td></td>
+		<td>Read orders</td>
 	</tr>
 </table>
 
@@ -101,4 +102,4 @@ The following table lists the namespace where functions can be found. CRUD opera
 ### Crowdflower behaviour
 For known errors see [jCrowdFlower](https://github.com/WISDelft/crowdery-crowdflower-java/blob/master/README.md#crowdflower-behaviour).
 
-
+![tudelft](http://www.se.ewi.tudelft.nl/dmcd2011/images/TU-Delft_logo.gif)

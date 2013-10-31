@@ -4,7 +4,7 @@ CrowdflowerJS is a library for the crowdflower API wrapped up in javascript. The
 
 This project is part of Web Information Systems group.
 
-Credits to
+### Credits to
 
 - Alessandro Bozzon (project conceptualization)
 - Jasper Oosterman (main developer)
@@ -14,7 +14,7 @@ Credits to
 - Ordering/paying of jobs is not tested yet.
 - Uploading data is not yet supported from all accepted types
 
-### CrowdflowerJS
+## CrowdflowerJS
 
 This projects is a Javascript wrapper for web APIs exposed by CrowdFlower. Since Javascript does not allow to do cross domain requests a local proxy is required to function. A servlet that forwards the parameters and data written to the proxy and returns the response data and status is enough.
 
@@ -30,31 +30,35 @@ All API requests are asynchronous meaning that results (or errors) should be han
 ```
 
 (2) Setup the credentials and proxy
-	
-		var proxyURL = <url>;
-		var key = <key>;
-		$.crowdflower.key(key).proxyURL(proxyURL);
+```javascript
+var proxyURL = <url>;
+var key = <key>;
+$.crowdflower.key(key).proxyURL(proxyURL);
+```
 	
 Now all the API functions are accessible in an intuitive way.
 (3a) Get all the jobs 
 
-		$.crowdflower.jobs.read().done(function(jobs) {
-			//if there are jobs available
-			if (jobs && jobs.length > 0) {
-				for ( var i = 0; i < jobs.length; i++) {
-					//process each job
-				}
-			}
-		});
+```javascript
+$.crowdflower.jobs.read().done(function(jobs) {
+	//if there are jobs available
+	if (jobs && jobs.length > 0) {
+		for ( var i = 0; i < jobs.length; i++) {
+			//process each job
+		}
+	}
+});
+```
 
 (3b) Delete a job
 
-		$.crowdflower.job(job_id).remove().done(function() {
-			alert("Job " + job_id + " successfully deleted.")
-		});
+```javascript
+$.crowdflower.job(job_id).remove().done(function() {
+	alert("Job " + job_id + " successfully deleted.")
+});
+```
 
-
-### Function namespaces
+## Function namespaces
 The following table lists the namespace where functions can be found. CRUD operations are supported following the naming scheme CrowdFlower specifies in the API. The "C" is found in plural namespaces (jobs, judgments etc.) and the "RUD" are in the singular namespaces (job, judgement etc.).
 
 <table border="1">
@@ -100,7 +104,13 @@ The following table lists the namespace where functions can be found. CRUD opera
 </table>
 
 
-### Crowdflower behaviour
+## Crowdflower behaviour
 For known errors see [jCrowdFlower](https://github.com/WISDelft/crowdery-crowdflower-java/blob/master/README.md#crowdflower-behaviour).
+
+## Organization
+**Delft University of Technology** <br />
+[Faculty] Electrical Engineering, Computer Science and Mathematics<br />
+[Department] Web Information Systems<br />
+[Contact] jasper.oosterman@gmail.com <br />
 
 ![tudelft](http://www.se.ewi.tudelft.nl/dmcd2011/images/TU-Delft_logo.gif)
